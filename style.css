@@ -1,0 +1,12 @@
+:root {
+    --backgroundcolor: #FAFAFA;
+    --headlinecolor1: black;
+    --headlinecolor2: #18C5AB;
+    --buttoncolor1: #0DFDD9;
+    --buttoncolor2: #F2F2F2;
+
+}
+
+body {
+    margin: 0;
+}
