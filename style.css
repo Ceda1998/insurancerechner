@@ -9,4 +9,21 @@
 
 body {
     margin: 0;
+    background-color: var(backgroundcolor);
+    font-family: 'Raleway';
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.headlineRechner {
+    color: var(--headlinecolor2);
 }
