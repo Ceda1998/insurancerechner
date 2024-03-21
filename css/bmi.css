@@ -1,0 +1,23 @@
+#bmiCalculatorForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 14px;
+}
+
+.formFlexContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.calculatorContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

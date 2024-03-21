@@ -6,9 +6,33 @@
     <title>BMI Rechner</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="./css/bmi.css">
     <script src="./js/mainscript.js"></script>
 </head>
 <body>
-    
+    <div class="contentContainer">
+        <nav>
+            <h1>Insurance</h1>
+            <h1 class="headlineRechner">Rechner</h1>
+        </nav>
+        <div class="calculatorContentContainer">
+            <div class="bmiCalculatorFrame">
+                <form action="#" id="bmiCalculatorForm" onsubmit="calculateBmi()">
+                    <div class="formFlexContainer">
+                        <label>Age</label><input type="number" id="currentAge">
+                    </div>
+                    <div class="formFlexContainer">
+                        <label>Weight</label><input type="number" id="currentWeight">
+                    </div>
+                    
+                    <div class="formFlexContainer">
+                        <label>Male</label><input type="checkbox">
+                        <label>Male</label><input type="checkbox">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
