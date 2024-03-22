@@ -1,5 +1,6 @@
 :root {
-    --backgroundcolor: #FAFAFA;
+    --backgroundcolor1: #FAFAFA;
+    --backgroundcolor2: #F3F3F3;
     --headlinecolor1: black;
     --headlinecolor2: #18C5AB;
     --buttoncolor1: #0DFDD9;
@@ -10,15 +11,32 @@
 
 body {
     margin: 0;
-    background-color: var(backgroundcolor);
+    background-color: var(backgroundcolor1);
     font-family: 'Raleway';
+}
+
+.navLeft {
+    display: flex; 
 }
 
 nav {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     border-bottom: 1px solid grey;
+}
+
+#backwardsArrow {
+    height: 54px;
+    width: 54px;
+    transition: transform .2s;
+    margin-right: 20px;
+}
+
+#backwardsArrow:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 h1 {

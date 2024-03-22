@@ -12,31 +12,39 @@
 <body>
     <div class="contentContainer">
         <nav>
-            <h1>Insurance</h1>
+            <div class="navLeft">
+                <h1>Insurance</h1>
             <h1 class="headlineRechner">Rechner</h1>
+            </div>
+            <img src="./img/backwardsArrow.png" alt="backwardsArrow" onclick="backToStart()" id="backwardsArrow">
         </nav>
         <div class="calculatorContentContainer">
             <div class="bmiCalculatorFrame">
                 <form action="#" id="bmiCalculatorForm" onsubmit="calculateBmi()">
                     <div class="formFlexContainer">
-                        <label>Age</label><input type="number" id="currentAge">
+                        <label>Alter</label><input type="number" id="currentAge" required>
                     </div>
                     <div class="formFlexContainer">
-                        <label>Weight</label><input type="number" id="currentWeight">
+                        <label>Größe</label><input type="number" id="currentHeight" required><label>cm</label>
                     </div>
                     
                     <div class="formFlexContainer">
-                        <label>Male</label><input type="checkbox">
-                        <label>Male</label><input type="checkbox">
+                        <label>Gewicht</label><input type="number" id="currentWeight" required><label>kg</label>
+                    </div>
+                    
+                    <div class="formFlexContainer">
+                        <label>Männlich</label><input type="checkbox" id="maleCheckbox" onclick="checkCheckboxes()">
+                        <label>Weiblich</label><input type="checkbox" id="femaleCheckbox" onclick="checkCheckboxes()">
+                        <label>Divers</label><input type="checkbox" id="diversCheckbox" onclick="checkCheckboxes()">
                     </div>
                     
                     <button class="calculateButton">BMI berechnen</button>
                 </form>
                     <div class="bmiResult">
-                        <p id="yourCurrentWeight">30</p>
+                        <p id="yourCurrentBmi"></p>
                         <div class="healthStatusContainer">
-                            <p id="healthStatus">Dein BMI ist&nbsp</p>
-                            <p id="currentStatus">normal</p>
+                            <p id="healthStatus">BMI-Status:&nbsp</p>
+                            <p id="currentStatus"></p>
                         </div>
                         
                     </div>
@@ -60,5 +68,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/bmi.js"></script>
 </body>
 </html>
