@@ -1,4 +1,9 @@
-#bmiCalculatorForm {
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.bmiCalculatorFrame {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +13,13 @@
     height: 500px;
     border: 1px solid black;
     border-radius: 14px;
+}
+
+#bmiCalculatorForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .formFlexContainer {
@@ -21,3 +33,67 @@
     align-items: center;
     height: 100vh;
 }
+
+.bmiResult {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+#yourCurrentWeight {
+    font-size: 22px;
+}
+
+.healthStatusContainer {
+    display: flex;
+}
+
+.bmiScala {
+    width: 400px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmiArea {
+    width: 80px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmiNumber {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#untergewicht {
+    background-color:#96F1C8 ;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+#normal {
+    background-color: #28A464;
+}
+
+#leichtesUebergewicht {
+    background-color: #FEC932;
+}
+
+#uebergewicht {
+    background-color: #FAAA53;
+}
+
+#adipositas {
+    background-color: red;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+

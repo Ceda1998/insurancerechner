@@ -30,7 +30,33 @@
                         <label>Male</label><input type="checkbox">
                     </div>
                     
+                    <button class="calculateButton">BMI berechnen</button>
                 </form>
+                    <div class="bmiResult">
+                        <p id="yourCurrentWeight">30</p>
+                        <div class="healthStatusContainer">
+                            <p id="healthStatus">Dein BMI ist&nbsp</p>
+                            <p id="currentStatus">normal</p>
+                        </div>
+                        
+                    </div>
+                        <div class="bmiScala">
+                            <div class="bmiArea" id="untergewicht">
+                                <p class="bmiNumber"> bis 18,5 </p>
+                            </div>
+                            <div class="bmiArea" id="normal">
+                                <p class="bmiNumber">18,5 - 25</p>
+                            </div>
+                            <div class="bmiArea" id="leichtesUebergewicht">
+                                <p class="bmiNumber">25-30</p>
+                            </div>
+                            <div class="bmiArea" id="uebergewicht">
+                                <p class="bmiNumber">30-35</p>
+                            </div>
+                            <div class="bmiArea" id="adipositas">
+                                <p class="bmiNumber"> über 35 </p>
+                            </div>
+                        </div>
             </div>
         </div>
     </div>

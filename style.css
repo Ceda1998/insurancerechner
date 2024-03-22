@@ -4,6 +4,7 @@
     --headlinecolor2: #18C5AB;
     --buttoncolor1: #0DFDD9;
     --buttoncolor2: #F2F2F2;
+    --buttoncolor3: #3C308F;
 
 }
 
@@ -56,4 +57,17 @@ h2 {
 .calculatorFrame:hover { 
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.calculateButton {
+    background-color: var(--buttoncolor1);
+    width: 200px;
+    height: 30px;
+    border-radius: 14px;
+    border: 1px solid grey;
+}
+
+.calculateButton:hover {
+    background-color: #5dffe7;
+    cursor: pointer;
 }
