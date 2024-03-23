@@ -25,7 +25,17 @@
       </nav>
 
       <div class="buCalculatorContent">
-        <div class="buGapCalculatorFrame"></div>
+        <div class="buGapCalculatorFrame">
+            <div class="buGapHeadline">
+                <h1>BU-Lücke berechnen</h1>
+            </div>
+            <form action="#" id="buGapCalculationForm">
+                <label>Nettoeinkommen</label><input type="number" required placeholder="2000€">
+                <label>weitere Einnahmen</label><input type="number" required placeholder="0€">
+                <labe>monatliche Ausgaben</labe><input type="number" id="monthlyOutgoings" required placeholder="1500€">
+                <button id="calculateBuButton">BU-Lücke berechnen</button>
+            </form>
+        </div>
       </div>
     </div>
   </body>
