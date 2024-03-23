@@ -1,0 +1,13 @@
+.buGapCalculatorFrame {
+    margin-top: 50px;
+    width: 80%;
+    height: 600px;
+    border-radius: 14px;
+    border: 1px solid black;
+    background-color: var(--backgroundcolor2);
+}
+
+.buCalculatorContent {
+    display: flex;
+    justify-content: center;
+}
