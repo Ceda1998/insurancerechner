@@ -70,6 +70,7 @@ h2 {
     transition: transform .2s;
     border-radius: 14px;
     margin: 10px;
+    background-color: var(--backgroundcolor2);
 }
 
 .calculatorFrame:hover { 
