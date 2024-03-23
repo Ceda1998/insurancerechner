@@ -1,5 +1,6 @@
 let bmiForm = document.getElementById('bmiCalculatorForm');
 let currentAge = document.getElementById("currentAge");
+let statusColor = document.getElementById('');
 let currentWeight;
 let currentHeight;
 let currentHealthStatus = document.getElementById("currentStatus");
@@ -29,8 +30,8 @@ function renderBmiHealthStatus() {
     } else {
         status = "Du bist adipös"
     }
-    currentHealthStatus.innerHTML = ` (${status})`;
-}
+    currentHealthStatus.innerHTML = ` ${status}`;
+} 
 
 function checkCheckboxes() {
     let male = document.getElementById('maleCheckbox');
@@ -42,8 +43,23 @@ function checkCheckboxes() {
         female.disabled = true;
         divers.checked = false;
         divers.disabled = true;
+    } 
+    else if(female.checked == true) {
+        male.checked = false;
+        male.disabled = true;
+        divers.checked = false;
+        divers.disabled = true; 
+    }
+    else if(divers.checked == true) {
+        male.checked = false;
+        male.disabled = true;
+        female.checked = false;
+        female.disabled = true; 
     } else {
+        male.disabled = false;
         female.disabled = false;
         divers.disabled = false;
     }
 }
+
+    

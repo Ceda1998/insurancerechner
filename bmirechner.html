@@ -1,73 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Rechner</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="./css/bmi.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="./css/bmi.css" />
     <script src="./js/mainscript.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="contentContainer">
-        <nav>
-            <div class="navLeft">
-                <h1>Insurance</h1>
-            <h1 class="headlineRechner">Rechner</h1>
-            </div>
-            <img src="./img/backwardsArrow.png" alt="backwardsArrow" onclick="backToStart()" id="backwardsArrow">
-        </nav>
-        <div class="calculatorContentContainer">
-            <div class="bmiCalculatorFrame">
-                <form action="#" id="bmiCalculatorForm" onsubmit="calculateBmi()">
-                    <div class="formFlexContainer">
-                        <label>Alter</label><input type="number" id="currentAge" required>
-                    </div>
-                    <div class="formFlexContainer">
-                        <label>Größe</label><input type="number" id="currentHeight" required><label>cm</label>
-                    </div>
-                    
-                    <div class="formFlexContainer">
-                        <label>Gewicht</label><input type="number" id="currentWeight" required><label>kg</label>
-                    </div>
-                    
-                    <div class="formFlexContainer">
-                        <label>Männlich</label><input type="checkbox" id="maleCheckbox" onclick="checkCheckboxes()">
-                        <label>Weiblich</label><input type="checkbox" id="femaleCheckbox" onclick="checkCheckboxes()">
-                        <label>Divers</label><input type="checkbox" id="diversCheckbox" onclick="checkCheckboxes()">
-                    </div>
-                    
-                    <button class="calculateButton">BMI berechnen</button>
-                </form>
-                    <div class="bmiResult">
-                        <p id="yourCurrentBmi"></p>
-                        <div class="healthStatusContainer">
-                            <p id="healthStatus">BMI-Status:&nbsp</p>
-                            <p id="currentStatus"></p>
-                        </div>
-                        
-                    </div>
-                        <div class="bmiScala">
-                            <div class="bmiArea" id="untergewicht">
-                                <p class="bmiNumber"> bis 18,5 </p>
-                            </div>
-                            <div class="bmiArea" id="normal">
-                                <p class="bmiNumber">18,5 - 25</p>
-                            </div>
-                            <div class="bmiArea" id="leichtesUebergewicht">
-                                <p class="bmiNumber">25-30</p>
-                            </div>
-                            <div class="bmiArea" id="uebergewicht">
-                                <p class="bmiNumber">30-35</p>
-                            </div>
-                            <div class="bmiArea" id="adipositas">
-                                <p class="bmiNumber"> über 35 </p>
-                            </div>
-                        </div>
-            </div>
+      <nav>
+        <div class="navLeft">
+          <h1>Insurance</h1>
+          <h1 class="headlineRechner">Rechner</h1>
         </div>
+        <img
+          src="./img/backwardsArrow.png"
+          alt="backwardsArrow"
+          onclick="backToStart()"
+          id="backwardsArrow"
+        />
+      </nav>
+      <div class="calculatorContentContainer">
+        <div class="bmiCalculatorFrame">
+          <form action="#" id="bmiCalculatorForm" onsubmit="calculateBmi()">
+            <div class="formFlexContainer">
+              <label>Alter</label>
+              <div class="inputFlex">
+                <input class="inputBmi" type="number" id="currentAge" required placeholder="z.b. 25"/>
+              </div>
+            </div>
+            <div class="formFlexContainer">
+              <label>Größe</label>
+              <div class="inputFlex">
+                <input class="inputBmi" type="number" id="currentHeight" required placeholder="z.b. 180"/><label
+                  >cm</label
+                >
+              </div>
+            </div>
+
+            <div class="formFlexContainer">
+              <label>Gewicht</label>
+              <div class="inputFlex">
+                <input class="inputBmi" type="number" id="currentWeight" required placeholder="z.b. 86"/><label
+                  >kg</label
+                >
+              </div>
+            </div>
+
+            <div class="formFlexContainerCheckboxes">
+              <label>Männlich</label
+              ><input
+                type="checkbox"
+                id="maleCheckbox"
+                onclick="checkCheckboxes()"
+              />
+              <label>Weiblich</label
+              ><input
+                type="checkbox"
+                id="femaleCheckbox"
+                onclick="checkCheckboxes()"
+              />
+              <label>Divers</label
+              ><input
+                type="checkbox"
+                id="diversCheckbox"
+                onclick="checkCheckboxes()"
+              />
+            </div>
+
+            <button class="calculateButton">BMI berechnen</button>
+          </form>
+         <div class="bmiResultContainer">
+          <div class="bmiResult">
+            <p id="yourCurrentBmi"></p>
+            <div class="healthStatusContainer">
+              <p id="healthStatus">BMI-Status:&nbsp</p>
+              <p id="currentStatus"></p>
+            </div>
+          </div>
+          <div class="bmiScala">
+            <div class="bmiArea" id="untergewicht">
+              <p class="bmiNumber">bis 18,5</p>
+            </div>
+            <div class="bmiArea" id="normal">
+              <p class="bmiNumber">18,5 - 25</p>
+            </div>
+            <div class="bmiArea" id="leichtesUebergewicht">
+              <p class="bmiNumber">25-30</p>
+            </div>
+            <div class="bmiArea" id="uebergewicht">
+              <p class="bmiNumber">30-35</p>
+            </div>
+            <div class="bmiArea" id="adipositas">
+              <p class="bmiNumber">über 35</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
     </div>
     <script src="./js/bmi.js"></script>
-</body>
+  </body>
 </html>

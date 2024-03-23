@@ -7,6 +7,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 20px;
     padding-top: 30px;
     width: 600px;
@@ -20,12 +21,14 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .formFlexContainer {
     display: flex;
-    gap: 10px;
+    justify-content: space-around;
+    width: 400px;
+    height: 20px;
 }
 
 .calculatorContentContainer {
@@ -52,7 +55,7 @@ p {
 
 .bmiScala {
     width: 400px;
-    height: 15px;
+    height: 20px;
     border: 2px solid black;
     border-radius: 14px;
     display: flex;
@@ -62,7 +65,7 @@ p {
 
 .bmiArea {
     width: 80px;
-    height: 15px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,3 +101,39 @@ p {
     border-bottom-right-radius: 14px;
 }
 
+.inputFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.inputBmi {
+    border-radius: 14px;
+    border: 1px solid black;
+    height: 20px;
+}
+
+#currentWeight {
+    width: 100px;
+}
+
+#currentHeight {
+    width: 100px;
+}
+
+#currentAge {
+    width: 100px;
+}
+
+.formFlexContainerCheckboxes {
+    display: flex;
+    gap: 5px;
+}
+
+.bmiResultContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+}
