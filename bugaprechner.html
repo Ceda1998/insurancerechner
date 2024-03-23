@@ -26,15 +26,47 @@
 
       <div class="buCalculatorContent">
         <div class="buGapCalculatorFrame">
-            <div class="buGapHeadline">
-                <h1>BU-Lücke berechnen</h1>
+          <div class="buGapHeadline">
+            <h1>BU-Lücke berechnen</h1>
+          </div>
+          <div class="buInformationContainer">
+            <h3 class="buInformationHeadline">Warum ist eine Berufsunfähigkeitsversicherung wichtig?</h3>
+            <p class="buInformationText">
+              Eine Berufsunfähigkeitsversicherung ist ein unverzichtbarer
+              Schutz, der Ihre finanzielle Sicherheit in unvorhergesehenen
+              Situationen bewahrt. Unfälle, Krankheiten oder andere unerwartete
+              Ereignisse können Ihre Fähigkeit zur Erwerbstätigkeit
+              beeinträchtigen und somit Ihr Einkommen gefährden. Ohne eine
+              angemessene Absicherung könnten Sie im Falle einer
+              Berufsunfähigkeit schnell in finanzielle Schwierigkeiten geraten.
+              Eine Berufsunfähigkeitsversicherung bietet Ihnen nicht nur ein
+              beruhigendes Gefühl der Sicherheit, sondern auch die Gewissheit,
+              dass Ihre finanziellen Verpflichtungen auch dann erfüllt werden
+              können, wenn Sie nicht mehr arbeiten können. Investieren Sie heute
+              in Ihren Schutz und sichern Sie sich und Ihre Familie für die
+              Zukunft ab.
+            </p>
+          </div>
+          <form action="#" id="buGapCalculationForm">
+            <div class="buGapInputFlex">
+              <label>Nettoeinkommen</label>
+              <input type="number" required placeholder="2000€" />
             </div>
-            <form action="#" id="buGapCalculationForm">
-                <label>Nettoeinkommen</label><input type="number" required placeholder="2000€">
-                <label>weitere Einnahmen</label><input type="number" required placeholder="0€">
-                <labe>monatliche Ausgaben</labe><input type="number" id="monthlyOutgoings" required placeholder="1500€">
-                <button id="calculateBuButton">BU-Lücke berechnen</button>
-            </form>
+            <div class="buGapInputFlex">
+              <label>weitere Einnahmen</label
+              ><input type="number" required placeholder="0€" />
+            </div>
+            <div class="buGapInputFlex">
+              <labe>monatliche Ausgaben</labe
+              ><input
+                type="number"
+                id="monthlyOutgoings"
+                required
+                placeholder="1500€"
+              />
+            </div>
+            <button id="calculateBuButton" class="calculateButton">BU-Lücke berechnen</button>
+          </form>
         </div>
       </div>
     </div>

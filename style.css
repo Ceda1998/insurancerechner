@@ -84,6 +84,7 @@ h2 {
     height: 30px;
     border-radius: 14px;
     border: 1px solid grey;
+    font-weight: bold;
 }
 
 .calculateButton:hover {

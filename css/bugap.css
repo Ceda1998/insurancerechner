@@ -13,14 +13,51 @@
 }
 
 #buGapCalculationForm {
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
+}
+
+#buGapCalculationForm label {
+    width: 160px;
 }
 
 .buGapHeadline {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buGapInputFlex {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+#calculateBuButton {
+    width: 150px;
+    height: 40px;
+    background-color: var(--buttoncolor1);
+    border: 1px solid black;
+    border-radius: 14px;
+}
+
+#calculateBuButton {
+    margin-top: 20px;
+}
+
+.buInformationHeadline {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.buInformationText{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-wrap: wrap;
 }
