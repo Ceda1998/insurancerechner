@@ -1,3 +1,7 @@
 function renderBuGapResult() {
-    return `Hier steht das BU-Gap Ergebnis`;
+    return `
+    <div>
+  <canvas id="buChart"></canvas>
+</div>
+    `;
 }

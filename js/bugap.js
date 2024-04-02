@@ -1,5 +1,7 @@
 let buGapContainer = document.getElementById('buGapContainer');
 
 function calculateBuGap() {
-     buGapContainer.innerHTML = renderBuGapResult();
+    buGapContainer.innerHTML = renderBuGapResult();
+    createChart();
 }
+
