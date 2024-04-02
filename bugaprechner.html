@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="./css/bugap.css" />
-    <script src="./js/mainscript.js"></script>
   </head>
   <body>
     <div class="contentContainer">
@@ -25,7 +24,7 @@
       </nav>
 
       <div class="buCalculatorContent">
-        <div class="buGapCalculatorFrame">
+        <div class="buGapCalculatorFrame" id="buGapContainer">
           <div class="buGapHeadline">
             <h1>BU-Lücke berechnen</h1>
           </div>
@@ -47,7 +46,7 @@
               Zukunft ab.
             </p>
           </div>
-          <form action="#" id="buGapCalculationForm">
+          <form action="#" id="buGapCalculationForm" onsubmit="calculateBuGap()">
             <div class="buGapInputFlex">
               <label>Nettoeinkommen</label>
               <input type="number" required placeholder="2000€" />
@@ -70,5 +69,9 @@
         </div>
       </div>
     </div>
+
+    <script src="./js/mainscript.js"></script>
+    <script src="./js/bugap.js"></script>
+    <script src="./js/renderfunctions.js"></script>
   </body>
 </html>
