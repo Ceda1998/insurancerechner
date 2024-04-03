@@ -10,7 +10,7 @@ function calculateBuGap() {
     let fullEmr = Math.round(allIncome * 0.5);
     let buGap = Math.round(allIncome * 0.8);
     console.log(allIncome);
-    buGapContainer.innerHTML = renderBuGapResult();
+    buGapContainer.innerHTML = renderBuGapResult(buGap);
     createChart(allIncome, spendings, buGap, fullEmr, halfEmr);
 }
 

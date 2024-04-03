@@ -9,9 +9,16 @@ new Chart(ctx, {
     data: {
         labels: ['Gesamteinkommen', 'Ausgaben', 'BU-Lücke', 'Volle EMR', 'Halbe EMR'],
         datasets: [{
-            label: 'BU-Lücke',
+            label: 'Einkommen',
             data: [allIncome, spendings, buGap, fullEmr, halfEmr],
-            borderWidth: 1
+            borderWidth: 1,
+            backgroundColor: [
+                'rgba(102, 204, 153, 0.5)',
+                'rgba(255, 159, 64, 0.5)',
+                'rgba(176, 0, 186, 0.5)',
+                'rgba(255, 0, 0, 0.5)',
+                'rgba(255, 0, 0, 0.5)',
+              ]
         }]
     },
     options: {
